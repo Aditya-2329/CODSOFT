@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d03e684a61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Aditya</span><br>Raj from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg" alt="profile pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm a dedicated and aspiring frontend developer with a passion for creating captivating and
+                        user-friendly web experiences. Through my journey as a student, I've honed my skills in HTML,
+                        CSS, and JavaScript, with a keen eye for design and usability.
+                        <br>
+                        My goal is to bridge the gap between aesthetics and functionality, crafting websites that not
+                        only look stunning but also provide seamless interactions. I thrive on learning and staying
+                        up-to-date with the latest web technologies.
+                        <br>
+                        Join me on my journey as I embark on new projects, explore innovative design trends, and strive
+                        to make the digital world a more user-centric and visually appealing place.
+                        <br>
+                        Let's code the future together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Beyond Coding</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="custom1">Programming Languages</span><br>C/C++(advanced) ▫
+                                HTML & CSS (advanced) ▫
+                                <br>SQL(intermediate) ▫
+                                JavaScript(intermediate)
+                            </li>
+                            <li><span class="custom1">Technology Stack</span><br>Tailwind ▫ Bootstrap ▫ React.js ▫ 
+                                jQuery ▫ Frontend Security
+                                
+                            </li>
+                            <li><span class="custom1">Version Control </span><br>Git ▫ GitHub
+                            </li>
+                            <!-- <li><span class="custom1">API Integration</span><br>Third-party API integration ▫ RESTful
+                                API design
+                                principles</li> -->
+                            <li><span class="custom1">Soft Skills</span><br>Teamwork and collaboration ▫
+                                Problem-solving and critical thinking ▫
+                                <br>Effective communication
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="custom1">Bachelor of Technology in Computer Science
+                                    in Engineering</span><span class="custom">08/2022 - Present</span><br>Heritage
+                                Institute of Technology,Kolkata</li>
+                            <li><span class="custom1">Bihar School Examination Board,Patna - Science Stream</span><span
+                                    class="custom">2016 - 2018</span><br>L.N.T College,Muzaffarpur</li>
+                            <h1>Courses & Certification</h1>
+                            <li><span class="custom1">Learn Front-End Web Development from Scratch</span><span
+                                    class="custom">Udemy</span><br>Steve Bluche</li>
+                            <li><span class="custom1">How to be a Successful
+                                    Business Analyst</span><span class="custom">upGrad</span></li>
+                            <li><span class="custom1">Mastering AI:ChatGPT,
+                                    DALL.E, MidJourney and
+                                    their API's</span><span class="custom">Udemy</span><br>Zabi Sahi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="custom1">Languages</span><br>English(Proficient) ▫
+                                Hindi(Native)
+                            </li>
+                            <li><span class="custom1">Tech-related Activities</span><br>Completed a Hackathon-Hack
+                                Heritage</li>
+                            <li><span class="custom1">Hobbies and Interests</span><br> Photography ▫ Video Editing
+                                ▫ Playing Video Games ▫ <br>Carrom ▫ Cricket ▫ Travelling</li>
+                            <li><span class="custom1">Goals and Aspirations</span><br>Career Advancement ▫
+                                Innovation and Creativity ▫<br> Leadership Roles ▫ Challenging Projects ▫
+                                Team Building ▫<br> Balanced Lifestyle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>basjx wqsahzjn</h2>
+                    <p>sajkb wjsan iuhqwsbaj qwihsa iuqwaj wqishazn 9wqiuaj iqwugbz uiwgazhb qwshai iqah qwuashz iqwhsa
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>basjx wqsahzjn</h2>
+                    <p>sajkb wjsan iuhqwsbaj qwihsa iuqwaj wqishazn 9wqiuaj iqwugbz uiwgazhb qwshai iqah qwuashz iqwhsa
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>basjx wqsahzjn</h2>
+                    <p>sajkb wjsan iuhqwsbaj qwihsa iuqwaj wqishazn 9wqiuaj iqwugbz uiwgazhb qwshai iqah qwuashz iqwhsa
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <button class="btn3">Working</button>
+                    <img src="images/work1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>CricketGearHub : Your Premier Cricket Kit Resource.</h3>
+                        <p>CricketGearHub is your one-stop destination for top-quality cricket gear, featuring an
+                            extensive product catalog, expert buying guides, and the latest cricket news. Elevate your
+                            game with the best equipment from the cricketing world's premier resource. Explore today at
+                            CricketGearHub.com.</p>
+                        <a href="https://github.com/Aditya-2329/CricketGearHub"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg" alt="work-2">
+                    <div class="layer">
+                        <h3>Drum-kit : Enjoy with Music.</h3>
+                        <p>is an interactive web project featuring a virtual drum kit created using HTML, CSS, and
+                            JavaScript. Users can play drums, experiment with sounds, and share their beats while
+                            learning about rhythm and music composition.</p>
+                        <a href="https://github.com/Aditya-2329/Drum_Sounds"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>TinDog : Find a perfect mate for your dogs</h3>
+                        <p>This frontend website, crafted with HTML, CSS, and Bootstrap, prioritizes
+                            responsive design for an optimal user experience. It embodies modern web
+                            development standards, ensuring compatibility across devices and screens.</p>
+                        <a href="https://github.com/Aditya-2329/tinDog"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Aditya-2329" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> <a
+                            href="mailto:mail4aditya29@gamil.com">mail4aditya29@gamil.com</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:+917255983435">+91 7255983435</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aditya-raj-1480a5169"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Aditya-2329"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com/Aditya_raj1221"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=+917255983435"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="images/AdityaRajResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy <i class="fa-brands fa-asymmetrik"></i></span>adi. Made with <i
+                    class="fa-solid fa-heart"></i> by Aditya Raj</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        var side = document.getElementById("sidemenu");
+
+        function openmenu() {
+            side.style.right = "0";
+        }
+
+        function closemenu() {
+            side.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ8c7_SGjPr5SPn6OOPUUM-UfjkDBmM3g5n-Of2_12h8I-SXwVRvFNcjIykdpBlZdzKQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
